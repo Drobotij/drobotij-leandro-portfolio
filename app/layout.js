@@ -4,10 +4,6 @@ import "./globals.css";
 import Sidemenu from "./Sidemenu";
 import hamburger_ from "../public/hamburger_logo.svg";
 import Image from "next/image";
-export const metadata = {
-  title: "Drobotij Leandro Nahuel",
-  description: "Web developer",
-};
 
 export default function RootLayout({ children }) {
   return (

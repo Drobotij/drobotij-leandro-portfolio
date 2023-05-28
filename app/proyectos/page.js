@@ -1,10 +1,9 @@
 import React from "react";
 import sac_ from "../../public/sacFutbol_logo.svg";
-import laFirma_ from "../../public/laFirma_logo.svg";
+import laFirma_ from "../../public/lafirma_logo.svg";
 import pasteleriaNatalie_ from "../../public/pasteleriaNatalie_logo.svg";
 import bolsaTrabajo_ from "../../public/bolsaTrabajo_logo.svg";
 import Image from "next/image";
-import Link from "next/link";
 
 const Proyectos = () => {
   return (

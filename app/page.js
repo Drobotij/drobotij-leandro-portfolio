@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Lottie from "lottie-react";
 import animacion_perfil_1 from "../public/animacion_perfil_1.json";
 import animacion_perfil_2 from "../public/animacion_perfil_2.json";
@@ -37,6 +36,7 @@ export default function Home() {
             style={style}
             animationData={animacion_perfil_2}
             loop={true}
+            alt="Animación"
           />
         </div>
       </div>

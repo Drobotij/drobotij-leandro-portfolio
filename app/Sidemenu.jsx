@@ -25,6 +25,7 @@ const Sidemenu = () => {
             width={180}
             height={180}
             className="rounded-full"
+            alt="Drobotij Leandro Nahuel"
           />
         </div>
       </div>
