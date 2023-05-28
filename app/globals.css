@@ -2,26 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  color: #292D32;
+  background: linear-gradient(270deg, #C6D2D6 0%, #EBEFF0 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+li {
+  list-style-type: none;
+  opacity: 0.9;
+  transition: all ease .25s;
+}
+
+li:hover {
+  opacity: 1;
+
+}
+
+
+/* Animación habilidades */
+.element {
+  position: absolute;
+  width: 100px;
+
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: show_elements 1.5s forwards ease;
+}
+
+@keyframes show_elements {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.proximamente {
+  position: relative;
+  overflow: hidden;
+}
+
+.proximamente::after {
+  content: 'Proximamente';
+  color: #EBEFF0;
+  transform: rotate(45deg);
+  background-color: #292D32;
+  padding: 10px 50px;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+}
+
+.sidemenu.active {
+  transform: translate(0, 0);
+  top: 0;
+  left: 0;
+}
+
+.sidemenu {
+  transform: translate(-120%, 0);
+  position: absolute;
+  transition: all ease .25s ;
+  width: 100%;
+  z-index: 100;
+  
+}
+
+@media only screen and (min-width:1024px) {
+  .sidemenu {
+    width: 25%;
+    transform: translate(0, 0);
+
+    position: static;
+  }
 }
