@@ -70,14 +70,14 @@ const Sidemenu = () => {
         <p className="text-grisesito text-sm mt-5 pb-1">Navegar</p>
         <nav>
           <li>
-            <Link href={{ pathname: "/" }}>Inicio</Link>
+            <Link className="text-primary px-2 py-1 font-bold hover:bg-secondary transition-all  w-full block" href={{ pathname: "/" }}>Inicio</Link>
           </li>
 
           <li>
-            <Link href={{ pathname: "/about" }}>Quien soy</Link>
+            <Link className="text-primary px-2 py-1 font-bold hover:bg-secondary transition-all  w-full block" href={{ pathname: "/about" }}>Quien soy</Link>
           </li>
           <li>
-            <Link href={{ pathname: "/proyectos" }}>Proyectos</Link>
+            <Link className="text-primary px-2 py-1 font-bold hover:bg-secondary transition-all w-full block" href={{ pathname: "/proyectos" }}>Proyectos</Link>
           </li>
         </nav>
       </div>
