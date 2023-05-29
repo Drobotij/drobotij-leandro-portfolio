@@ -42,7 +42,7 @@ const Sidemenu = () => {
           />
         </a>
         <a
-          href="http://https://github.com/Drobotij"
+          href="https://github.com/Drobotij"
           target="_blank"
           rel="noopener noreferrer"
         >
