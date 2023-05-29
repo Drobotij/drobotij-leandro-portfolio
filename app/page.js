@@ -11,6 +11,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-10 min-h-full">
+      
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2 shadow-lg border border-spacing-1 border-gray-200 rounded-3xl p-3">
           <h2 className="text-center font-bold text-2xl">¡Soy Leandro!</h2>
@@ -42,7 +43,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:flex-row gap-5 items-center shadow-lg border border-spacing-1 border-gray-200  rounded-3xl p-5">
         <div>
-          <h2 className="text-center lg:text-left font-bold text-2xl">Estudiando una licenciatura</h2>
+          <h2 className="text-center lg:text-left font-bold text-2xl">
+            Estudiando una licenciatura
+          </h2>
           <p className="text-grisesito mt-5 text-center lg:text-left ">
             Actualmente estoy estudiando la carrera de{" "}
             <span className="text-primary font-bold">
